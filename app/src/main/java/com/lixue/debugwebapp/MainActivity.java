@@ -174,6 +174,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
+                    //发送异常消息
+                    sendMessage(KEY_ERROR, e.getMessage(), ERROR);
                 }
             }
         }
